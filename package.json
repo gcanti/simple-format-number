@@ -1,0 +1,28 @@
+{
+  "name": "formatNumber",
+  "version": "0.1.0",
+  "description": "A simple clean way to format numbers with Javascript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "npm run lint && node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcanti/formatNumber.git"
+  },
+  "author": "Giulio Canti <giulio.canti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcanti/formatNumber/issues"
+  },
+  "homepage": "https://github.com/gcanti/formatNumber",
+  "devDependencies": {
+    "eslint": "1.2.0",
+    "tape": "4.2.0"
+  },
+  "tags": [
+  ],
+  "keywords": [
+  ]
+}
