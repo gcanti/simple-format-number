@@ -3,12 +3,14 @@ A simple clean way to format numbers with Javascript
 # Setup
 
 ```sh
-npm install formatNumber
+npm install simple-format-number
 ```
 
 # Usage
 
 ```js
+var formatNumber = require('simple-format-number');
+
 formatNumber(1000.342); // => 1,000.34
 formatNumber(1000.342, { fractionDigits: 3 }): // => 1,000.342
 formatNumber(1000.342, { symbols: { decimal: ',', grouping: '.' } }); // => 1.000,34 (italian format)

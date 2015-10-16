@@ -1,5 +1,5 @@
 {
-  "name": "formatNumber",
+  "name": "simple-format-number",
   "version": "0.1.0",
   "description": "A simple clean way to format numbers with Javascript",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gcanti/formatNumber.git"
+    "url": "https://github.com/gcanti/simple-format-number.git"
   },
   "author": "Giulio Canti <giulio.canti@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gcanti/formatNumber/issues"
+    "url": "https://github.com/gcanti/simple-format-number/issues"
   },
-  "homepage": "https://github.com/gcanti/formatNumber",
+  "homepage": "https://github.com/gcanti/simple-format-number",
   "devDependencies": {
     "eslint": "1.2.0",
     "tape": "4.2.0"
