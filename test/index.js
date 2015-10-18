@@ -19,6 +19,12 @@ tape('formatNumber(n, options)', function (t) {
     assert.strictEqual(formatNumber(-1000.342, { fractionDigits: 3 }), '-1,000.342');
   });
 
+  t.test('should handle options.useGrouping', function (assert) {
+    assert.plan(2);
+    assert.strictEqual(formatNumber(1000.342, { useGrouping: false }), '1000.34');
+    assert.strictEqual(formatNumber(-1000.342, { useGrouping: false }), '-1000.34');
+  });
+
   t.test('should handle options.symbols', function (assert) {
     assert.plan(2);
     assert.strictEqual(formatNumber(1000.342, { symbols: { decimal: ',', grouping: '.' } }), '1.000,34');

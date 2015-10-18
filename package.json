@@ -22,7 +22,11 @@
     "tape": "4.2.0"
   },
   "tags": [
+    "format",
+    "number"
   ],
   "keywords": [
+    "format",
+    "number"
   ]
 }
