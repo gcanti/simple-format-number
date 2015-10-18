@@ -27,7 +27,7 @@ where:
 - `number` the number to format
 - `options`
   - `fractionDigits: number` the number of decimal digits (default `2`)
-  . `useGrouping: boolean` set to false when you want to display a number in a textbox (default `true`)
+  - `useGrouping: boolean` set to `false` when you want to display a number in a textbox (default `true`)
   - `symbols`
     - `decimal` the decimal symbol (default `.`)
     - `grouping` the grouping symbol (default `,`)
