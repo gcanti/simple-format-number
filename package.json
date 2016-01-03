@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A simple clean way to format numbers with Javascript",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint index.js",
     "test": "npm run lint && node test"
