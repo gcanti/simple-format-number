@@ -1,6 +1,6 @@
 {
   "name": "simple-format-number",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple clean way to format numbers with Javascript",
   "main": "index.js",
   "files": [
