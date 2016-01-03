@@ -14,9 +14,10 @@ tape('formatNumber(n, options)', function (t) {
   });
 
   t.test('should handle options.fractionDigits', function (assert) {
-    assert.plan(2);
+    assert.plan(3);
     assert.strictEqual(formatNumber(1000.342, { fractionDigits: 3 }), '1,000.342');
     assert.strictEqual(formatNumber(-1000.342, { fractionDigits: 3 }), '-1,000.342');
+    assert.strictEqual(formatNumber(-1000.342), '-1,000.34');
   });
 
   t.test('should handle options.useGrouping', function (assert) {

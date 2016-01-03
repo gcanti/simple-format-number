@@ -1,28 +1,12 @@
-function shallowCopy(a, b) {
-  if (b) {
-    for (var k in b) {
-      if (b.hasOwnProperty(k)) {
-        a[k] = b[k];
-      }
-    }
-  }
-  return a;
-}
-
-function getOptions(options) {
-  var defaults = {
-    fractionDigits: 2,
-    useGrouping: true // turn off when you want to display a number in a textbox
-  };
-  var symbols = { // US formats as default
+var assign = require('lodash/object/assign');
+var defaults = {
+  fractionDigits: 2,
+  useGrouping: true,
+  symbols: { // US formats
     grouping: ',',
     decimal: '.'
-  };
-  options = shallowCopy(defaults, options);
-  options.symbols = shallowCopy(symbols, options.symbols);
-  return options;
-}
-
+  }
+};
 var insertGroupingRegexp = /(\d+)(\d{3})/;
 
 function insertGrouping(s, grouping) {
@@ -34,7 +18,7 @@ function insertGrouping(s, grouping) {
 }
 
 function formatNumber(n, options) {
-  options = getOptions(options);
+  options = assign({}, defaults, options);
   var parts = n.toFixed(options.fractionDigits).split('.');
   var integerPart = parts[0];
   var decimalPart = parts[1];
