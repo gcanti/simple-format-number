@@ -14,7 +14,8 @@ tape('formatNumber(n, options)', function (t) {
   });
 
   t.test('should handle options.fractionDigits', function (assert) {
-    assert.plan(3);
+    assert.plan(4);
+    assert.strictEqual(formatNumber(1000.342, { fractionDigits: 0 }), '1,000');
     assert.strictEqual(formatNumber(1000.342, { fractionDigits: 3 }), '1,000.342');
     assert.strictEqual(formatNumber(-1000.342, { fractionDigits: 3 }), '-1,000.342');
     assert.strictEqual(formatNumber(-1000.342), '-1,000.34');
