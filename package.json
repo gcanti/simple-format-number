@@ -20,9 +20,6 @@
     "url": "https://github.com/gcanti/simple-format-number/issues"
   },
   "homepage": "https://github.com/gcanti/simple-format-number",
-  "dependencies": {
-    "lodash": "^3.10.1"
-  },
   "devDependencies": {
     "eslint": "1.2.0",
     "tape": "4.2.0"
