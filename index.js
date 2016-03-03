@@ -1,12 +1,3 @@
-var assign = require('lodash/object/assign');
-var defaults = {
-  fractionDigits: 2,
-  useGrouping: true,
-  symbols: { // US formats
-    grouping: ',',
-    decimal: '.'
-  }
-};
 var insertGroupingRegexp = /(\d+)(\d{3})/;
 
 function insertGrouping(s, grouping) {
@@ -18,7 +9,16 @@ function insertGrouping(s, grouping) {
 }
 
 function formatNumber(n, options) {
-  options = assign({}, defaults, options);
+  // Set default options
+  options = options || {};
+  options.fractionDigits = typeof options.fractionDigits !== 'undefined' ? options.fractionDigits : 2;
+  options.useGrouping = typeof options.useGrouping !== 'undefined' ? options.useGrouping : true;
+  options.symbols = typeof options.symbols !== 'undefined' ? options.symbols : {
+    // US formats
+    grouping: ',',
+    decimal: '.'
+  };
+
   var parts = n.toFixed(options.fractionDigits).split('.');
   var integerPart = parts[0];
   var decimalPart = parts[1];
