@@ -10,6 +10,11 @@
 
 **Note**: Gaps between patch versions are faulty/broken releases.
 
+## v0.1.2
+
+- **Internal**
+  - removed lodash in favor of simple option defaults (thanks @wesleytodd)
+
 ## v0.1.1
 
 - **Internal**
